@@ -12,11 +12,16 @@
   <div id="app">
     <h1>{{ message }}</h1>
     <h1>{{ movies }}</h1>
+   
     <div v-for="movie in movies">
       <p>{{ movie }}</p>
     </div>
     <input type="text" v-model="newMovie">
     <button v-on:click="movieCreate"> Add </button>
+    <div v-if="newMovie === 'zoolander'"> 
+      <img src="http://tny.im/kPs">
+    </div>
+    
   </div>
 </body>
 </html>
